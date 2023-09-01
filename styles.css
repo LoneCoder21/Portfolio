@@ -1,55 +1,116 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 10px;
+}
+
 .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .name {
+        font-size: 80px;
+        margin: 0;
+    }
+    .type {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    button {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px 50px;
+        border-radius: 10px;
+    }
 }
 
 button {
-  background-color: blue;
-  border: 0;
+    border: 0;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 header {
-  position: sticky;
-  padding: 0px;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+    position: sticky;
+    padding: 0px;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .item {
+        text-decoration: none;
+        padding: 5px 20px;
+        color: black;
+        font-weight: 600;
+        font-size: 20px;
+    }
 }
 
 .skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .container {
     display: flex;
-    flex-flow: row wrap;
-    .items {
-      border: 2px solid;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        font-size: 25px;
     }
-  }
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        > * {
+            margin: 0px 10px;
+        }
+        .type {
+            font-size: 18px;
+        }
+        .items {
+            border: 2px solid;
+        }
+    }
 }
 
 .work {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .projects {
-    > * {
-      display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        font-size: 25px;
     }
-  }
+
+    .projects {
+        > * {
+            display: flex;
+            margin: 10px 0px;
+        }
+        .title {
+            font-size: 20px;
+        }
+    }
+
+    .info {
+        margin: 10px;
+    }
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .name {
+        font-size: 25px;
+    }
 }
 
 img {
-  width: 200px;
+    width: 250px;
 }
