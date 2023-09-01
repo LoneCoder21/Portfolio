@@ -1,0 +1,55 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: blue;
+  border: 0;
+}
+
+header {
+  position: sticky;
+  padding: 0px;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    .items {
+      border: 2px solid;
+    }
+  }
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .projects {
+    > * {
+      display: flex;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 200px;
+}
