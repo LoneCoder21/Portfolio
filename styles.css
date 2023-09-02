@@ -37,6 +37,9 @@ body {
     }
 }
 
+a {
+}
+
 button {
     border: 0;
     font-size: 20px;
@@ -46,12 +49,17 @@ button {
     border-radius: 10px;
     cursor: pointer;
     background-color: white;
-    border: 3px solid #fd6d0e;
+    border: 3px solid orangered;
     color: orangered;
+    background: linear-gradient(orangered, orangered);
+    background-size: calc(0%) auto;
+    background-repeat: no-repeat;
+    background-position: left;
 
     &:hover {
-        background-color: #fd6d0e;
         color: white;
+        background-size: calc(100%) auto;
+        transition: transform 200ms, background-size 200ms;
     }
 }
 
@@ -72,8 +80,12 @@ header {
         color: black;
         font-weight: bold;
         font-size: 20px;
+
         &:hover {
             color: white;
+            text-decoration: underline;
+            text-decoration-color: white;
+            transition: color 100ms, text-decoration-color 100ms;
         }
     }
 }
