@@ -45,10 +45,13 @@ button {
     padding: 15px 50px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #fd6d0e;
-    color: white;
+    background-color: white;
+    border: 3px solid #fd6d0e;
+    color: orangered;
 
     &:hover {
+        background-color: #fd6d0e;
+        color: white;
     }
 }
 
