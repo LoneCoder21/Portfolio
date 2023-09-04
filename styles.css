@@ -9,9 +9,25 @@ p {
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     margin-bottom: 50px;
+}
+
+#home {
+    scroll-margin-top: 100px;
+}
+
+#skills {
+    scroll-margin-top: 80px;
+}
+
+#work {
+    scroll-margin-top: 80px;
 }
 
 .home {
