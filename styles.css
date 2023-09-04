@@ -112,7 +112,6 @@ header {
         }
         .type {
             font-size: 32px;
-            color: orangered;
         }
         .items {
             border: 2px solid;
@@ -174,4 +173,30 @@ img {
 form {
     display: flex;
     justify-content: center;
+}
+
+.pointer {
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 0;
+    pointer-events: none;
+
+    &.inner {
+        background-color: #7c3d00;
+        width: 10px;
+        height: 10px;
+    }
+
+    &.outer {
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: 2px solid #7c3d00;
+    }
+}
+
+::selection {
+    background-color: #89cff0;
 }
