@@ -48,9 +48,6 @@ body {
         font-size: 30px;
         margin-bottom: 20px;
     }
-    button {
-        font-size: 20px;
-    }
 }
 
 button,
@@ -160,14 +157,17 @@ header {
             font-size: 17px;
             max-width: 600px;
         }
-        button {
+        a {
             padding: 10px;
-            font-size: 18px;
+            font-size: 22px;
         }
     }
 
     .info {
         margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

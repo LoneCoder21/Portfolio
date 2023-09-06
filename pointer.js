@@ -1,5 +1,3 @@
-console.log(3);
-
 addEventListener("mousemove", (event) => {
     const di = document.querySelectorAll(".pointer");
     if (di === null) return;
