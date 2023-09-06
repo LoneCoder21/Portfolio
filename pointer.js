@@ -2,9 +2,9 @@ addEventListener("mousemove", (event) => {
     const di = document.querySelectorAll(".pointer");
     if (di === null) return;
     di.forEach((pointer) => {
-        let o = 34;
+        let o = 32;
         if (pointer.classList.contains("inner")) {
-            o = 10;
+            o = 5;
         }
         o /= 2;
         pointer.style.left = `${event.x - o}px`;
@@ -15,7 +15,7 @@ addEventListener("mousemove", (event) => {
 document.addEventListener("DOMContentLoaded", function () {
     let circles = document.querySelector(".circles");
 
-    for (let i = 0; i < 12; ++i) {
+    for (let i = 0; i < 15; ++i) {
         let circle = document.createElement("div");
         circle.style.left = `${Math.floor(Math.random() * 100)}vw`;
         let size = Math.floor(Math.random() * 80 + 20);

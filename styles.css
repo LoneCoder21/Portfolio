@@ -48,27 +48,34 @@ body {
         font-size: 30px;
         margin-bottom: 20px;
     }
+    a {
+        color: orangered;
+        border-color: orangered;
+        font-size: 22px;
+    }
 }
 
 button,
 .button {
     border: 0;
     font-size: 20px;
-    padding: 5px 10px;
     font-weight: bold;
     text-decoration: none;
     padding: 15px 50px;
     border-radius: 10px;
     cursor: pointer;
     background-color: white;
-    border: 3px solid orangered;
-    color: orangered;
+    border: 3px solid #fd6d0e;
+    border-color: black;
+    color: black;
+
     background: linear-gradient(orangered, orangered);
     background-size: calc(0%) auto;
     background-repeat: no-repeat;
     background-position: left;
 
     &:hover {
+        border-color: orangered;
         color: white;
         background-size: calc(100%) auto;
         transition: transform 200ms, background-size 200ms;
@@ -126,10 +133,19 @@ header {
             font-size: 32px;
         }
         .items {
-            border: 2px solid;
             font-size: 25px;
-            width: 200px;
-            height: 200px;
+            width: 160px;
+            height: 230px;
+            background-color: rgb(212, 212, 212);
+            * {
+                display: flex;
+                justify-content: left;
+                margin: 5px;
+
+                p {
+                    margin: 0;
+                }
+            }
         }
     }
 }
@@ -158,8 +174,11 @@ header {
             max-width: 600px;
         }
         a {
-            padding: 10px;
+            padding: 5px;
             font-size: 22px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
     }
 
@@ -178,6 +197,15 @@ footer {
 
     .name {
         font-size: 25px;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 5px 10px;
+        color: orangered;
+        border-color: orangered;
     }
 }
 
@@ -202,15 +230,15 @@ form {
 
     &.inner {
         background-color: #7c3d00;
-        width: 10px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
     }
 
     &.outer {
         width: 30px;
         height: 30px;
         background-color: transparent;
-        border: 2px solid #7c3d00;
+        border: 1px solid #7c3d00;
     }
 }
 
