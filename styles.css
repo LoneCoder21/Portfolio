@@ -13,6 +13,9 @@ html {
     scroll-behavior: smooth;
 }
 
+:hover {
+}
+
 body {
     margin: 0;
     margin-bottom: 50px;
@@ -51,9 +54,6 @@ body {
     button {
         font-size: 20px;
     }
-}
-
-a {
 }
 
 button {
@@ -194,10 +194,11 @@ form {
 .pointer {
     border-radius: 50%;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 15px;
+    left: 50vw;
     font-size: 0;
     pointer-events: none;
+    z-index: 2;
 
     &.inner {
         background-color: #7c3d00;
@@ -215,4 +216,29 @@ form {
 
 ::selection {
     background-color: #89cff0;
+}
+
+.circles {
+    div {
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        top: -100px;
+        animation: animate 15s linear infinite;
+        z-index: -1;
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 1;
+        border-radius: 5%;
+    }
+
+    100% {
+        transform: translateY(-500px) rotate(720deg);
+        opacity: 0;
+        border-radius: 40%;
+    }
 }
