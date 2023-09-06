@@ -13,9 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-:hover {
-}
-
 body {
     margin: 0;
     margin-bottom: 50px;
@@ -161,6 +158,7 @@ header {
         }
         .description {
             font-size: 17px;
+            max-width: 600px;
         }
         button {
             padding: 10px;
