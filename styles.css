@@ -56,11 +56,13 @@ body {
     }
 }
 
-button {
+button,
+.button {
     border: 0;
     font-size: 20px;
     padding: 5px 10px;
     font-weight: bold;
+    text-decoration: none;
     padding: 15px 50px;
     border-radius: 10px;
     cursor: pointer;
