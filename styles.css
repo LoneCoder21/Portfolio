@@ -99,16 +99,17 @@ header {
 
     .left {
         a {
-            margin-left: 8px;
-            border: 2px solid white;
+            margin-left: 15px;
             color: white;
             letter-spacing: 2px;
             font-size: 25px;
+
             &:hover {
-                color: white;
-                text-decoration-color: white;
-                border-color: white;
-                background-color: #1ca3e2;
+                color: #00ffff;
+                &:after {
+                    background-color: #00ffff;
+                    transform: scale(1);
+                }
             }
         }
         &::first-letter {
@@ -118,16 +119,33 @@ header {
 
     .item {
         text-decoration: none;
-        padding: 5px 20px;
         color: black;
         font-weight: bold;
         font-size: 20px;
+        position: relative;
+        padding: 0;
+        margin: 5px 20px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            transform-origin: bottom left;
+            transition: transform 0.25s ease-out;
+        }
 
         &:hover {
             color: white;
-            text-decoration: underline;
-            text-decoration-color: white;
             transition: color 100ms, text-decoration-color 100ms;
+
+            &:after {
+                transform: scaleX(1);
+            }
         }
     }
 }
