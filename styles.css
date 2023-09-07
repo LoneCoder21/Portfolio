@@ -99,16 +99,20 @@ header {
 
     .left {
         a {
+            margin-left: 8px;
+            border: 2px solid white;
             color: white;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             font-size: 25px;
             &:hover {
-                color: #1ca3e2;
-                text-decoration-color: #89cff0;
+                color: white;
+                text-decoration-color: white;
+                border-color: white;
+                background-color: #1ca3e2;
             }
         }
         &::first-letter {
-            font-size: 40px;
+            font-size: 30px;
         }
     }
 
