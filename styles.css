@@ -171,6 +171,15 @@ header {
             margin: 50px 0px;
             flex-flow: row wrap;
             justify-content: center;
+
+            a.img {
+                padding: 0;
+                border: 2px white solid;
+
+                &:hover {
+                    border: 2px black solid;
+                }
+            }
         }
         .title {
             font-size: 25px;
