@@ -16,6 +16,7 @@ html {
 body {
     margin: 0;
     margin-bottom: 50px;
+    font-family: sans-serif;
 }
 
 #home {
@@ -92,6 +93,8 @@ header {
     justify-content: space-between;
     padding: 20px 0px;
     background-color: #fd6d0e;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
 
     .item {
         text-decoration: none;
@@ -123,6 +126,7 @@ header {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+
         > * {
             margin: 0px 10px;
             display: flex;
@@ -130,11 +134,13 @@ header {
             align-items: center;
         }
         .type {
-            font-size: 32px;
+            font-size: 30px;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+                "Lucida Sans", Arial, sans-serif;
         }
         .items {
             font-size: 25px;
-            width: 160px;
+            width: 170px;
             height: 230px;
             background-color: rgb(212, 212, 212);
             * {
@@ -168,10 +174,13 @@ header {
         }
         .title {
             font-size: 25px;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+                "Lucida Sans", Arial, sans-serif;
         }
         .description {
             font-size: 21px;
             max-width: 600px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         a {
             padding: 5px;
@@ -229,7 +238,7 @@ form {
     z-index: 2;
 
     &.inner {
-        background-color: #7c3d00;
+        background-color: black;
         width: 5px;
         height: 5px;
     }
@@ -238,12 +247,16 @@ form {
         width: 30px;
         height: 30px;
         background-color: transparent;
-        border: 1px solid #7c3d00;
+        border: 1px solid black;
     }
 }
 
 ::selection {
     background-color: #89cff0;
+}
+
+::hover {
+    background-color: red;
 }
 
 .circles {
