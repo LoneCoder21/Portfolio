@@ -15,7 +15,7 @@ html {
 
 body {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     font-family: sans-serif;
 }
 
@@ -215,6 +215,16 @@ footer {
         padding: 5px 10px;
         color: orangered;
         border-color: orangered;
+    }
+
+    .socials {
+        a {
+            color: black;
+            &:hover {
+                color: #fd6d0e;
+            }
+        }
+        margin-top: 5px;
     }
 }
 
