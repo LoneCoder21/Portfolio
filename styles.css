@@ -91,10 +91,26 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 0px;
     background-color: #fd6d0e;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
+
+    .left {
+        a {
+            color: white;
+            letter-spacing: 3px;
+            font-size: 25px;
+            &:hover {
+                color: #1ca3e2;
+                text-decoration-color: #89cff0;
+            }
+        }
+        &::first-letter {
+            font-size: 40px;
+        }
+    }
 
     .item {
         text-decoration: none;
@@ -174,10 +190,12 @@ header {
 
             a.img {
                 padding: 0;
-                border: 2px white solid;
+                opacity: 0.8;
+                transition: opacity 0.3s, scale 0.3s;
 
                 &:hover {
-                    border: 2px black solid;
+                    scale: 1.05;
+                    opacity: 1;
                 }
             }
         }
