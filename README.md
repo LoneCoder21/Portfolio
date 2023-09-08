@@ -8,6 +8,8 @@ My portfolio page is created with the classic web stack using HTML, CSS and Java
 
 ### Link
 
+The portfolio is live at [Github Pages](https://lonecoder21.github.io/Portfolio/)
+
 ### Icons
 
 All the icons are from [Iconify](https://icon-sets.iconify.design/).
