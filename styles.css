@@ -283,27 +283,11 @@ form {
   justify-content: center;
 }
 
-.pointer {
-  border-radius: 50%;
-  position: fixed;
-  top: 15px;
-  left: 50vw;
-  font-size: 0;
-  pointer-events: none;
-  z-index: 2;
+@media (hover: none) {
+  a {
+    background: yellow;
+  }
 }
-.pointer.inner {
-  background-color: black;
-  width: 5px;
-  height: 5px;
-}
-.pointer.outer {
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: 1px solid black;
-}
-
 ::selection {
   background-color: #89cff0;
 }
