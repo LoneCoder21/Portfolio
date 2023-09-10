@@ -310,12 +310,6 @@ form {
     justify-content: center;
 }
 
-@media (hover: none) {
-    a {
-        background: yellow;
-    }
-}
-
 @media (pointer: fine) {
     .pointer {
         border-radius: 50%;
