@@ -283,9 +283,26 @@ form {
   justify-content: center;
 }
 
-@media (hover: none) {
-  a {
-    background: yellow;
+@media (pointer: fine) {
+  .pointer {
+    border-radius: 50%;
+    position: fixed;
+    top: 15px;
+    left: 50vw;
+    font-size: 0;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .pointer.inner {
+    background-color: black;
+    width: 5px;
+    height: 5px;
+  }
+  .pointer.outer {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid black;
   }
 }
 ::selection {
